@@ -22,11 +22,11 @@ Rappel : Avant de commencer toute manipulation avec Spark, faut d'abord initiali
 
 4) - Faire une jointure (left) entre 'moviesEN' et 'ratingD'F sur la colonne ('id', 'movieId'), le résultat sera : 'moviesWithRatingsDF'
  
-6) - Maintenant concernant le DF : 'moviesWithRatingsDF', on veut garder que les colonnes suivantes : ('id', 'original_title', 'genres', 'adult', 'budget', 'overview', 'timestamp') et supprimer le restes
+5) - Maintenant concernant le DF : 'moviesWithRatingsDF', on veut garder que les colonnes suivantes : ('id', 'original_title', 'genres', 'adult', 'budget', 'overview', 'timestamp') et supprimer le restes
 
-7 ) - Ensuite on veut Renommer la colonne 'original_title' en -> title dans le Dataframe 'moviesWithRatingsDF'
+6 ) - Ensuite on veut Renommer la colonne 'original_title' en -> title dans le Dataframe 'moviesWithRatingsDF'
 
-5 ) - Crée une fonction pour Afficher les premiers 5 lignes d'un Dataframe et aussi pour visualiser son schéma de données, et utiliser cette fonction pour voir le contenu et le schéma du Dataframe 'moviesWithRatingsDF'
+7 ) - Crée une fonction pour Afficher les premiers 5 lignes d'un Dataframe et aussi pour visualiser son schéma de données, et utiliser cette fonction pour voir le contenu et le schéma du Dataframe 'moviesWithRatingsDF'
 
 8 ) - Classer les films sur leur 'rating' en ordre (DESC), et sauvegarder le résultat dans un fichier CSV.
 
