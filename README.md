@@ -18,18 +18,18 @@ Rappel : Avant de commencer toute manipulation avec Spark, faut d'abord initiali
 2) - Afficher les deux Dataframe, et vérifier qu'ils sont bien formatés
 
 
-3) Ensuite Pour le DF : 'moviesDF', on veut filtrer sur la colonne 'original_language', qui contient plusieurs valeurs ('en', 'fr', ..), est créer un nouveu DF (moviesEN).
+3) - Ensuite Pour le DF : 'moviesDF', on veut filtrer sur la colonne 'original_language', qui contient plusieurs valeurs ('en', 'fr', ..), est créer un nouveu DF (moviesEN).
 
 4) - Faire une jointure (left) entre 'moviesEN' et 'ratingD'F sur la colonne ('id', 'movieId'), le résultat sera : 'moviesWithRatingsDF'
  
-6) Maintenant concernant le DF : 'moviesWithRatingsDF', on veut garder que les colonnes suivantes : ('id', 'original_title', 'genres', 'adult', 'budget', 'overview', 'timestamp') et supprimer le restes
+6) - Maintenant concernant le DF : 'moviesWithRatingsDF', on veut garder que les colonnes suivantes : ('id', 'original_title', 'genres', 'adult', 'budget', 'overview', 'timestamp') et supprimer le restes
 
-7 ) Ensuite on veut Renommer la colonne 'original_title' en -> title dans le Dataframe 'moviesWithRatingsDF'
+7 ) - Ensuite on veut Renommer la colonne 'original_title' en -> title dans le Dataframe 'moviesWithRatingsDF'
 
-5 ) Crée une fonction pour Afficher les premiers 5 lignes d'un Dataframe et aussi pour visualiser son schéma de données, et utiliser cette fonction pour voir le contenu et le schéma du Dataframe 'moviesWithRatingsDF'
+5 ) - Crée une fonction pour Afficher les premiers 5 lignes d'un Dataframe et aussi pour visualiser son schéma de données, et utiliser cette fonction pour voir le contenu et le schéma du Dataframe 'moviesWithRatingsDF'
 
-8 ) Classer les films sur leur 'rating' en ordre (DESC), et sauvegarder le résultat dans un fichier CSV.
+8 ) - Classer les films sur leur 'rating' en ordre (DESC), et sauvegarder le résultat dans un fichier CSV.
 
-9 ) Faire une 2éme jointure entre moviesWithRatingsDF et credits sur la colonne 'id' => le Dataframe de sortie est nommé 'moviesAndCredits' , et afficher le 'cast' du film avec le titre 'Jumanji', on utilisant deux méthodes différentes : (SparkSQL) et (l'API Dataframe)
+9 ) - Faire une 2éme jointure entre 'moviesWithRatingsDF' et 'creditsDF' sur la colonne 'id' => le Dataframe de sortie est nommé 'moviesAndCredits' , puis afficher le 'cast' du film avec le titre 'Jumanji', on utilisant deux méthodes différentes : (SparkSQL) et (l'API Dataframe)
 
-10) Dans le Dataframe 'moviesAndCredits', on a une colonne 'timestamp', on utilisant les 'UDF' de Spark on veut transformer cette colonne
+10) - Dans le Dataframe 'moviesAndCredits', on a une colonne 'timestamp', on utilisant les 'UDF' de Spark on veut transformer cette colonne
