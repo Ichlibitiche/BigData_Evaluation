@@ -4,9 +4,9 @@ Evalutaion Formation BigData
 On a 3 tables "movies" et "rating" "credits" 
 
 
-La partie que vous allez développer, sera sous forme de TU (Tests Unitaires), donc dans le partie 'test/scala'
-Dans 'test/resources', on a 3 fichier de données (movies, ratings, et credits). C'est la source de donnée qu'on va utiliser dans ce TP.
-L'objectif de ce TP est de manipuler ces sources de données.
+* La partie que vous allez développer, sera sous forme de TU (Tests Unitaires), donc dans le partie 'test/scala/fr/cgi/MainTest.scala'
+* Dans 'test/resources', on a 3 fichier de données (movies, ratings, et credits). C'est la source de donnée qu'on va utiliser dans ce TP.
+* L'objectif de ce TP est de manipuler ces sources de données.
 
 Dans ce répo, on a un projet Maven, qui contient les packages nécessaires pour le développement
 
@@ -15,7 +15,7 @@ Dans ce répo, on a un projet Maven, qui contient les packages nécessaires pour
  
 Rappel : Avant de commencer toute manipulation avec Spark, faut d'abord initialiser le SparkSession avec les bonne paramètres
 
-2) - Afficher les deux Dataframe, et vérifier qu'ils sont bien formatés
+2) - Afficher les Dataframes, et vérifier qu'ils sont bien formatés
 
 
 3) - Ensuite Pour le DF : 'moviesDF', on veut filtrer sur la colonne 'original_language', qui contient plusieurs valeurs ('en', 'fr', ..), est créer un nouveu DF (moviesEN).
